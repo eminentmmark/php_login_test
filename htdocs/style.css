@@ -1,0 +1,120 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	/*the above are applicable for all the html elements*/
+}
+
+.header {
+	/*width: 900px;*/
+	text-transform: uppercase;/*mm ndo niliongeza*/
+	margin: 0 auto;
+	background-image: linear-gradient(rgba(4, 9, 30, 0.4),
+		rgba(4, 9, 30, 0.4)),url(img/emoji.jpg);
+	background-position: center;/*aligns the pic 
+	making the its center the focus - visible */
+	background-size: cover;/*fits the entire pic 
+	from one side to the other side avoiding 
+	clustering of duplicates*/
+	/*position: relative;*/
+	text-align: left;
+}
+
+section{
+	display: flex;/*puts the logo and the links on 
+	the same horizonal line from being on the same 
+	vertical line*/
+	padding: 2% 6%;/*for spacing btn the links*/
+	/*justify-content: space-between;/*puts the space 
+	btn the logo and the links*/
+	align-items: center;/*as in centre of a circle 
+	- from all directions*/
+}
+
+.links {
+	flex: 1;
+	/*text-align: right;*/
+	/*text-transform: uppercase;/*mm ndo niliongeza*/
+}
+
+.links ul li {
+	/*list-style: none;*/
+	display: inline-block;/*aligns the link's list 
+	in a horizontal line from the vertical one*/
+	padding: 4px 6px;
+	/*position: relative;*/
+}
+
+.myforms ul li {
+	/*list-style: none;*/
+	display: inline-block;/*aligns the link's list 
+	in a horizontal line from the vertical one*/
+	padding: 4px 6px;
+	/*position: relative;*/
+}
+
+
+.header a {
+	color: white;
+	text-decoration: none;/*removes the automatic 
+	deco of the line below the links*/
+	font-size: 13px;
+}
+
+.links ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: ghostwhite;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.links ul li:hover::after {
+	width: 100%;
+}
+
+.myforms ul li::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: ghostwhite;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.myforms ul li:hover::after {
+	width: 100%;
+}
+
+
+.myforms div button a form {
+	/*display: flex;*/
+	/*padding: 12% 24%;
+	justify-content: space-between;
+	align-items: flex-end;
+	position: relative;
+	/*text-align: center;/*puts the form at the centre*/
+}
+
+.myforms{
+	display: flex;
+	/*padding: 6% 12%;
+	justify-items: space-between;
+	/*align-items: flex-end;*/
+	/*position: relative;*/
+}
+
+.main{
+	text-align: center;
+	display: block;
+	width:  150px;
+	height: 100px;
+	text-align: centre;
+	margin: 0 auto;
+	/*background-color: rgba(40, 40, 40, 0.7);*/
+	margin-top: 40px;
+}
+
